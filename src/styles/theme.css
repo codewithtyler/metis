@@ -1,0 +1,23 @@
+:root {
+  /* Base colors */
+  --color-primary: 37 99 235; /* blue-600 */
+  --color-primary-hover: 29 78 216; /* blue-700 */
+  
+  /* Dark theme colors */
+  --color-dark-50: 248 250 252;
+  --color-dark-100: 241 245 249;
+  --color-dark-200: 226 232 240;
+  --color-dark-300: 203 213 225;
+  --color-dark-400: 148 163 184;
+  --color-dark-500: 100 116 139;
+  --color-dark-600: 71 85 105;
+  --color-dark-700: 51 65 85;
+  --color-dark-800: 30 41 59;
+  --color-dark-900: 15 23 42;
+  --color-dark-950: 2 6 23;
+
+  /* Semantic colors */
+  --color-error: 220 38 38; /* red-600 */
+  --color-success: 22 163 74; /* green-600 */
+  --color-warning: 217 119 6; /* amber-600 */
+}

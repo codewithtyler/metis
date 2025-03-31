@@ -1,0 +1,73 @@
+import { Ticket, TicketResponse } from '../types';
+
+export const tickets: Ticket[] = [
+  {
+    id: '1',
+    subject: 'Cannot access account',
+    description: 'I am unable to log in to my account. It says invalid credentials.',
+    categoryId: 'general',
+    status: 'in_progress',
+    assignedToId: 'agent1',
+    customerId: 'customer1',
+    teamId: 'team1',
+    queueType: 'agent',
+    createdAt: '2024-03-15T10:00:00Z',
+    updatedAt: '2024-03-15T10:00:00Z',
+  },
+  {
+    id: '2',
+    subject: 'Feature request: Dark mode',
+    description: 'Would love to see a dark mode option in the application.',
+    categoryId: 'general',
+    status: 'new',
+    customerId: 'customer1',
+    queueType: 'agent',
+    teamId: 'team1',
+    createdAt: '2024-03-14T15:30:00Z',
+    updatedAt: '2024-03-14T15:30:00Z',
+  },
+  {
+    id: '3',
+    subject: 'Critical security vulnerability',
+    description: 'Found a potential security issue that needs immediate attention.',
+    categoryId: 'technical',
+    status: 'new',
+    customerId: 'customer2',
+    teamId: 'team1',
+    queueType: 'admin',
+    escalationReason: 'Security issue requires immediate admin review',
+    createdAt: '2024-03-16T09:00:00Z',
+    updatedAt: '2024-03-16T09:00:00Z',
+  },
+  {
+    id: '4',
+    subject: 'Billing discrepancy',
+    description: 'There appears to be an overcharge on my latest invoice.',
+    categoryId: 'billing',
+    status: 'new',
+    customerId: 'customer1',
+    teamId: 'team1',
+    queueType: 'agent',
+    createdAt: '2024-03-16T10:30:00Z',
+    updatedAt: '2024-03-16T10:30:00Z',
+  },
+];
+
+export const ticketResponses: TicketResponse[] = [
+  {
+    id: '1',
+    ticketId: '1',
+    userId: 'agent1',
+    content: 'Hi, I\'ll help you with this issue. Can you please verify your email address?',
+    isInternal: false,
+    createdAt: '2024-03-15T10:30:00Z',
+  },
+  {
+    id: '2',
+    ticketId: '1',
+    userId: 'agent1',
+    content: 'Let\'s check if this is related to the recent auth update.',
+    isInternal: true,
+    createdAt: '2024-03-15T10:31:00Z',
+  },
+];

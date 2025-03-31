@@ -1,0 +1,135 @@
+{
+  "launchPriceAvailable": true,
+  "showTestimonials": false,
+  "showDiscount": false,
+  "inviteLinks": [
+    {
+      "id": "inv1",
+      "code": "acme-helpdesk-xyz",
+      "productId": "product1",
+      "teamId": "team1",
+      "uses": 0,
+      "createdAt": "2024-03-15T10:00:00Z"
+    },
+    {
+      "id": "inv2",
+      "code": "acme-analytics-xyz",
+      "productId": "product2",
+      "teamId": "team1",
+      "uses": 0,
+      "createdAt": "2024-03-15T10:00:00Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "product1",
+      "name": "Help Desk",
+      "description": "Customer support ticketing system",
+      "teamId": "team1",
+      "accessType": "private",
+      "defaultTemplateId": "default",
+      "allowedDomains": ["acme.com"],
+      "slug": "help-desk"
+    },
+    {
+      "id": "product2",
+      "name": "Analytics Dashboard",
+      "description": "Business intelligence platform",
+      "teamId": "team1",
+      "accessType": "public",
+      "defaultTemplateId": "analytics_default",
+      "slug": "analytics"
+    },
+    {
+      "id": "product3",
+      "name": "CRM",
+      "description": "Customer relationship management",
+      "teamId": "team2",
+      "accessType": "private",
+      "allowedDomains": ["startup.com", "startup.io"],
+      "defaultTemplateId": "crm_default",
+      "slug": "crm"
+    }
+  ],
+  "productAccess": [
+    {
+      "id": "access1",
+      "productId": "product1",
+      "userId": "customer1",
+      "accessType": "user",
+      "createdAt": "2024-03-15T10:00:00Z"
+    },
+    {
+      "id": "access2",
+      "productId": "product2",
+      "userId": "customer1",
+      "accessType": "user",
+      "createdAt": "2024-03-15T10:00:00Z"
+    }
+  ],
+  "teams": [
+    {
+      "id": "team1",
+      "name": "Acme Support",
+      "domain": "acme.com"
+    },
+    {
+      "id": "team2", 
+      "name": "Startup Help",
+      "domain": "startup.com"
+    }
+  ],
+  "users": [
+    {
+      "id": "admin1",
+      "email": "admin@team.com",
+      "name": "John Admin",
+      "password": "admin987",
+      "role": "admin",
+      "teamId": "team1",
+      "productIds": ["product1", "product2"]
+    },
+    {
+      "id": "agent1",
+      "email": "agent@team.com",
+      "name": "Sarah Agent",
+      "password": "agent987",
+      "role": "agent",
+      "teamId": "team1",
+      "productIds": ["product1"]
+    },
+    {
+      "id": "customer1",
+      "email": "jane@user.com",
+      "name": "Jane Smith",
+      "password": "user987",
+      "role": "customer",
+      "teamId": "team1"
+    },
+    {
+      "id": "customer2",
+      "email": "bob@user.com",
+      "name": "Bob Wilson",
+      "password": "user987",
+      "role": "customer",
+      "teamId": "team2"
+    }
+  ],
+  "categories": [
+    {
+      "id": "billing",
+      "name": "Billing Issue",
+      "productId": "product1"
+    },
+    {
+      "id": "general",
+      "name": "General Question",
+      "productId": "product1"
+    },
+    {
+      "id": "technical",
+      "name": "Technical Question",
+      "productId": "product1"
+    }
+  ]
+}
