@@ -6,7 +6,7 @@ import { ProductProvider } from './context/ProductContext';
 import { APP_NAME, APP_DESCRIPTION } from './config/app';
 import RoleRouter from './components/RoleRouter';
 import LoginPage from './components/LoginPage';
-import SignupPage from './components/SignupPage';
+import SignupPage from './pages/SignupPage';
 import Dashboard from './pages/Dashboard';
 import TicketList from './pages/TicketList';
 import TeamManagement from './pages/TeamManagement';
